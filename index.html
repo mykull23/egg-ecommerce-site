@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Hen & Harvest | Fresh Eggs, Every Size</title>
+  <!-- Google Fonts + icon library -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-eggshell"></div>
+
+<!-- Top bar with mom&pop vibe -->
+<div class="top-bar">
+  <div class="logo-area">
+    <div class="egg-icon-graphic">
+      <i class="fas fa-egg"></i>
+    </div>
+    <div class="mom-pop-title">
+      <h1>Hen & Harvest</h1>
+      <p>✨ farm fresh • honest prices ✨</p>
+    </div>
+  </div>
+  <div class="cart-icon" id="cartIconBtn">
+    <i class="fas fa-shopping-basket"></i>
+    <span>Cart</span>
+    <span id="cartItemCount" class="cart-count">0</span>
+  </div>
+</div>
+
+<!-- Hero section with graphics & price promise -->
+<div class="hero">
+  <div class="hero-text">
+    <h2>Eggs so fresh,<br> they just laid this morning 🥚</h2>
+    <div class="tagline"><i class="fas fa-leaf"></i> Pasture-raised, no shortcuts</div>
+    <p><span class="price-badge">🥚 prices second to none 🥚</span><br>Every single size — from Peewee to Jumbo!</p>
+  </div>
+  <div class="hero-graphic">
+    <i class="fas fa-egg"></i><i class="fas fa-egg" style="font-size: 4rem; margin-left: -0.5rem;"></i>
+    <div style="font-size: 1rem; margin-top: 8px;">🐔🐓</div>
+  </div>
+</div>
+
+<main class="container">
+  <div class="section-title">
+    <i class="fas fa-basket-shopping"></i> choose your size — all farm fresh
+  </div>
+  <div class="egg-grid" id="eggGrid"></div>
+</main>
+
+<div class="footer">
+  <p><i class="fas fa-heart" style="color:#b86f2c;"></i> Hen & Harvest — direct from our family farm to your table. Free-range hens, ethical & local.</p>
+  <p>🚚 free delivery on dozen+ | satisfaction guaranteed</p>
+</div>
+
+<!-- Cart Sidebar Overlay -->
+<div id="cartSidebar" class="cart-overlay">
+  <div class="cart-header">
+    <h2><i class="fas fa-shopping-cart"></i> Your basket</h2>
+    <button class="close-cart" id="closeCartBtn">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItemsList">
+    <div class="empty-cart-msg">Your basket is empty — add some farm eggs!</div>
+  </div>
+  <div class="cart-total" id="cartTotalDisplay">Total: $0.00</div>
+  <button class="checkout-btn" id="checkoutBtn">🐣 Checkout 🐣</button>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
