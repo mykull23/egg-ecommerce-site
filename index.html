@@ -2,74 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Hen & Harvest | Fresh Eggs, Every Size</title>
-  <!-- Google Fonts + icon library -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Hen & Harvest | eggs so good they're illegal in 3 states</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="bg-eggshell"></div>
+  <!-- mobile bottom nav -->
+  <div class="bottom-nav">
+    <a href="index.html" class="nav-item active">
+      <i class="fas fa-home"></i>
+      <span>eggs</span>
+    </a>
+    <a href="about.html" class="nav-item">
+      <i class="fas fa-face-grin-tongue-squint"></i>
+      <span>story</span>
+    </a>
+    <button class="nav-item cart-trigger" id="mobileCartTrigger">
+      <i class="fas fa-basket-shopping"></i>
+      <span>cart</span>
+      <span class="cart-badge" id="mobileCartBadge">0</span>
+    </button>
+    <a href="contact.html" class="nav-item">
+      <i class="fas fa-message"></i>
+      <span>cluck</span>
+    </a>
+  </div>
 
-<!-- Top bar with mom&pop vibe -->
-<div class="top-bar">
-  <div class="logo-area">
-    <div class="egg-icon-graphic">
-      <i class="fas fa-egg"></i>
+  <!-- header -->
+  <div class="header">
+    <div class="logo-tag">
+      <span class="logo-icon">🥚</span>
+      <div>
+        <div class="logo">HEN & HARVEST</div>
+        <div class="tagline">est. whenever • we forgot</div>
+      </div>
     </div>
-    <div class="mom-pop-title">
-      <h1>Hen & Harvest</h1>
-      <p>✨ farm fresh • honest prices ✨</p>
-    </div>
+    <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger">
+      <i class="fas fa-basket-shopping"></i>
+      <span class="cart-badge" id="desktopCartBadge">0</span>
+    </button>
   </div>
-  <div class="cart-icon" id="cartIconBtn">
-    <i class="fas fa-shopping-basket"></i>
-    <span>Cart</span>
-    <span id="cartItemCount" class="cart-count">0</span>
-  </div>
-</div>
 
-<!-- Hero section with graphics & price promise -->
-<div class="hero">
-  <div class="hero-text">
-    <h2>Eggs so fresh,<br> they just laid this morning 🥚</h2>
-    <div class="tagline"><i class="fas fa-leaf"></i> Pasture-raised, no shortcuts</div>
-    <p><span class="price-badge">🥚 prices second to none 🥚</span><br>Every single size — from Peewee to Jumbo!</p>
+  <!-- hero - unhinged -->
+  <div class="hero">
+    <div class="hero-badge">🔥 HOTTEST EGGS IN THE GALAXY 🔥</div>
+    <h1>eggs so fresh they<br> <span class="strike">might hatch</span> <span class="gradient-text">definitely will slap</span></h1>
+    <p class="hero-sub">from peewee to jumbo. we got all sizes. no weird chicken factories. just vibes and yolks.</p>
+    <div class="price-claim">💰 PRICES SECOND TO NONE (we'll fight a grocery store over it) 💰</div>
   </div>
-  <div class="hero-graphic">
-    <i class="fas fa-egg"></i><i class="fas fa-egg" style="font-size: 4rem; margin-left: -0.5rem;"></i>
-    <div style="font-size: 1rem; margin-top: 8px;">🐔🐓</div>
-  </div>
-</div>
 
-<main class="container">
-  <div class="section-title">
-    <i class="fas fa-basket-shopping"></i> choose your size — all farm fresh
+  <!-- product grid -->
+  <div class="section-header">
+    <h2>pick your fighter</h2>
+    <p>every egg comes with a free dad joke. you can't opt out.</p>
   </div>
+
   <div class="egg-grid" id="eggGrid"></div>
-</main>
 
-<div class="footer">
-  <p><i class="fas fa-heart" style="color:#b86f2c;"></i> Hen & Harvest — direct from our family farm to your table. Free-range hens, ethical & local.</p>
-  <p>🚚 free delivery on dozen+ | satisfaction guaranteed</p>
-</div>
-
-<!-- Cart Sidebar Overlay -->
-<div id="cartSidebar" class="cart-overlay">
-  <div class="cart-header">
-    <h2><i class="fas fa-shopping-cart"></i> Your basket</h2>
-    <button class="close-cart" id="closeCartBtn">&times;</button>
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-joke" id="dadJoke">loading dad joke...</div>
+    <div class="footer-links">
+      <span>no returns (you'll eat them too fast)</span>
+      <span>•</span>
+      <span>chickens are treated like royalty</span>
+      <span>•</span>
+      <span>free shipping on 2+ dozen</span>
+    </div>
+    <div class="copyright">Hen & Harvest — we put the 'egg' in 'egg-cellent' since forever</div>
   </div>
-  <div class="cart-items" id="cartItemsList">
-    <div class="empty-cart-msg">Your basket is empty — add some farm eggs!</div>
-  </div>
-  <div class="cart-total" id="cartTotalDisplay">Total: $0.00</div>
-  <button class="checkout-btn" id="checkoutBtn">🐣 Checkout 🐣</button>
-</div>
 
-<!-- External JavaScript -->
-<script src="script.js"></script>
+  <!-- cart drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3><i class="fas fa-basket-shopping"></i> your egg basket</h3>
+        <button class="cart-close" id="closeCartBtn">&times;</button>
+      </div>
+      <div class="cart-items-list" id="cartItemsList">
+        <div class="empty-cart">🐔 basket empty. go commit some egg purchases.</div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total" id="cartTotal">$0.00</div>
+        <a href="checkout.html" class="checkout-button">checkout →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

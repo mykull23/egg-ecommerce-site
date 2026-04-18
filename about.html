@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Hen & Harvest | our unhinged origin story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bottom-nav">
+    <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>eggs</span></a>
+    <a href="about.html" class="nav-item active"><i class="fas fa-face-grin-tongue-squint"></i><span>story</span></a>
+    <button class="nav-item cart-trigger" id="mobileCartTrigger"><i class="fas fa-basket-shopping"></i><span>cart</span><span class="cart-badge" id="mobileCartBadge">0</span></button>
+    <a href="contact.html" class="nav-item"><i class="fas fa-message"></i><span>cluck</span></a>
+  </div>
+
+  <div class="header">
+    <div class="logo-tag"><span class="logo-icon">🥚</span><div><div class="logo">HEN & HARVEST</div><div class="tagline">est. whenever • we forgot</div></div></div>
+    <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+  </div>
+
+  <div class="about-container">
+    <div class="about-hero">
+      <div class="about-badge">⚠️ REAL HUMANS. REAL CHICKENS. REAL WEIRD. ⚠️</div>
+      <h1>we started with 6 chickens<br>and a <span class="gradient-text">terrible business plan</span></h1>
+    </div>
+
+    <div class="story-grid">
+      <div class="story-card">
+        <div class="story-icon">👵</div>
+        <h3>mom (the brains)</h3>
+        <p>"I bought some chickens for fun. then we had too many eggs. then the neighbors wanted some. then the neighbors' neighbors. now we're here. send help."</p>
+      </div>
+
+      <div class="story-card">
+        <div class="story-icon">👴</div>
+        <h3>pop (the 'muscle')</h3>
+        <p>"I just carry the heavy boxes and make dad jokes. Mom does everything else. I'm basically decorative. and I'm okay with that."</p>
+      </div>
+
+      <div class="story-card">
+        <div class="story-icon">🐔</div>
+        <h3>the chickens (the real bosses)</h3>
+        <p>"They wake up at 5am, demand organic treats, and lay eggs like it's an Olympic sport. We work for them now."</p>
+      </div>
+    </div>
+
+    <div class="manifesto">
+      <div class="manifesto-quote">"we don't do factory farms. we don't do sad eggs. we do sunrise collections, happy chickens, and prices that'll make you do a double take."</div>
+      <div class="manifesto-sign">— Mom & Pop, probably</div>
+    </div>
+
+    <div class="fun-section">
+      <div class="fun-fact">
+        <i class="fas fa-drumstick-bite"></i>
+        <span>our most famous chicken is named 'Princess Lay-a' and she has 2.3k Instagram followers</span>
+      </div>
+      <div class="fun-fact">
+        <i class="fas fa-trophy"></i>
+        <span>we once sold 400 dozen in 6 hours. our backs still hurt.</span>
+      </div>
+      <div class="fun-fact">
+        <i class="fas fa-skull"></i>
+        <span>we've never lost an argument about egg quality. never will.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-joke" id="dadJoke">loading dad joke...</div>
+    <div class="footer-links"><span>no returns (you'll eat them too fast)</span><span>•</span><span>chickens are treated like royalty</span><span>•</span><span>free shipping on 2+ dozen</span></div>
+    <div class="copyright">Hen & Harvest — we put the 'egg' in 'egg-cellent' since forever</div>
+  </div>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">$0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
