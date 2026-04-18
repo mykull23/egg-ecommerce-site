@@ -3,72 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Hen & Harvest | give us your money (for eggs)</title>
+  <title>Bart's Egg | checkout na, sayang ang itlog</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-theme="light">
   <div class="bottom-nav">
     <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>eggs</span></a>
-    <a href="about.html" class="nav-item"><i class="fas fa-face-grin-tongue-squint"></i><span>story</span></a>
+    <a href="about.html" class="nav-item"><i class="fas fa-face-grin-tongue-squint"></i><span>kwento</span></a>
     <button class="nav-item cart-trigger" id="mobileCartTrigger"><i class="fas fa-basket-shopping"></i><span>cart</span><span class="cart-badge" id="mobileCartBadge">0</span></button>
-    <a href="contact.html" class="nav-item"><i class="fas fa-message"></i><span>cluck</span></a>
+    <a href="contact.html" class="nav-item"><i class="fas fa-message"></i><span>kulit</span></a>
   </div>
 
   <div class="header">
-    <div class="logo-tag"><span class="logo-icon">🥚</span><div><div class="logo">HEN & HARVEST</div><div class="tagline">est. whenever • we forgot</div></div></div>
-    <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    <a href="index.html" class="logo-tag" style="text-decoration: none;">
+      <span class="logo-icon">🥚</span>
+      <div><div class="logo">BART'S EGG</div><div class="tagline">eggs with attitude • since 2024</div></div>
+    </a>
+    <div class="header-links">
+      <a href="index.html" class="header-link">home</a>
+      <a href="about.html" class="header-link">kwento</a>
+      <a href="contact.html" class="header-link">kulit</a>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+      <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    </div>
   </div>
 
   <div class="checkout-container">
     <div class="checkout-header">
-      <div class="checkout-badge">💰 YOU'RE ABOUT TO BUY THE BEST EGGS ON EARTH 💰</div>
-      <h1>almost <span class="gradient-text">egg-actly</span> there</h1>
+      <div class="checkout-badge">💰 SAYANG ANG DISKARTE KUNG DI MO TUTULOY 💰</div>
+      <h1>almost <span class="gradient-text">egg-actly</span> there na 'to</h1>
     </div>
 
     <div class="checkout-grid">
       <div class="order-review">
         <h3><i class="fas fa-receipt"></i> your golden dozen(s)</h3>
         <div id="checkoutItemsList" class="checkout-items"></div>
-        <div class="checkout-total" id="checkoutTotal">$0.00</div>
-        <div class="checkout-note"><i class="fas fa-smile-wink"></i> each order includes 3 random dad jokes. you're welcome.</div>
+        <div class="checkout-total" id="checkoutTotal">₱0.00</div>
+        <div class="checkout-note"><i class="fas fa-smile-wink"></i> every order = 3 random dad jokes. you can't return those either.</div>
       </div>
 
       <div class="payment-section">
-        <h3><i class="fas fa-credit-card"></i> where we sending these bad boys?</h3>
+        <h3><i class="fas fa-credit-card"></i> saan namin idedeliver ang mga itlog?</h3>
+        <div class="payment-placeholder" loading="lazy">
+          <i class="fas fa-image"></i>
+          <p>[DELIVERY ILLUSTRATION: Bart on a motorcycle with eggs]</p>
+        </div>
         <form id="purchaseForm">
-          <input type="text" placeholder="full name (real or fake, we don't judge)" required>
-          <input type="email" placeholder="email for order updates" required>
-          <input type="tel" placeholder="phone (for delivery driver to awkwardly text)">
-          <input type="text" placeholder="street address" required>
+          <input type="text" placeholder="buong pangalan (pwedeng nickname, pwedeng 'boss')" required>
+          <input type="email" placeholder="email para sa updates" required>
+          <input type="tel" placeholder="phone number (para matawagan ka ng rider)">
+          <input type="text" placeholder="address (complete na, 'wag tipirin)" required>
           <div class="row-2">
-            <input type="text" placeholder="city" required>
-            <input type="text" placeholder="state" required>
-            <input type="text" placeholder="zip" required>
+            <input type="text" placeholder="city/munisipyo" required>
+            <input type="text" placeholder="province" required>
+            <input type="text" placeholder="zip code" required>
           </div>
           <div class="payment-methods">
-            <div class="payment-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i><i class="fab fa-cc-paypal"></i></div>
-            <input type="text" placeholder="card number" required>
+            <div class="payment-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i><i class="fab fa-cc-paypal"></i><span>GCash</span><span>Maya</span></div>
+            <input type="text" placeholder="card number / GCash number" required>
             <div class="row-2">
               <input type="text" placeholder="MM/YY" required>
               <input type="text" placeholder="CVC" required>
             </div>
           </div>
-          <button type="submit" class="purchase-btn"><i class="fas fa-check-circle"></i> COMPLETE ORDER • SEND EGGS NOW</button>
+          <button type="submit" class="purchase-btn"><i class="fas fa-check-circle"></i> BAYAD NA • SEND EGGS NA AGAD</button>
         </form>
-        <div id="purchaseSuccess" style="display:none;" class="success-toast">🎉 ORDER CONFIRMED! your eggs are en route. the chickens are proud. 🎉</div>
+        <div id="purchaseSuccess" style="display:none;" class="success-toast">🎉 ORDER CONFIRMED! your eggs are on their way. Bart is personally packing them. with love (and pagod). 🎉</div>
       </div>
     </div>
   </div>
 
   <div class="footer">
     <div class="footer-joke" id="dadJoke">loading dad joke...</div>
-    <div class="footer-links"><span>no returns (you'll eat them too fast)</span><span>•</span><span>chickens are treated like royalty</span><span>•</span><span>free shipping on 2+ dozen</span></div>
-    <div class="copyright">Hen & Harvest — we put the 'egg' in 'egg-cellent' since forever</div>
+    <div class="footer-links">
+      <a href="#" class="footer-link">no returns (you'll eat them too fast)</a>
+      <span>•</span>
+      <a href="#" class="footer-link">🐔 happy chickens = happy eggs</a>
+      <span>•</span>
+      <a href="#" class="footer-link">free delivery on 2+ dozen</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:hello@bartsegg.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="copyright"><a href="index.html" style="color: inherit; text-decoration: none;">Bart's Egg</a> — "basta itlog, kay Bart ka na" • since nagka-idea si Bart habang nakain ng itlog</div>
   </div>
 
-  <div class="cart-drawer" id="cartDrawer"><div class="cart-overlay" id="cartOverlay"></div><div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">$0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div></div>
+  <div class="cart-drawer" id="cartDrawer"><div class="cart-overlay" id="cartOverlay"></div><div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">₱0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div></div>
 
   <script src="script.js"></script>
 </body>

@@ -3,81 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Hen & Harvest | our unhinged origin story</title>
+  <title>Bart's Egg | the kwento behind the egg</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-theme="light">
+  <!-- mobile bottom nav -->
   <div class="bottom-nav">
     <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>eggs</span></a>
-    <a href="about.html" class="nav-item active"><i class="fas fa-face-grin-tongue-squint"></i><span>story</span></a>
+    <a href="about.html" class="nav-item active"><i class="fas fa-face-grin-tongue-squint"></i><span>kwento</span></a>
     <button class="nav-item cart-trigger" id="mobileCartTrigger"><i class="fas fa-basket-shopping"></i><span>cart</span><span class="cart-badge" id="mobileCartBadge">0</span></button>
-    <a href="contact.html" class="nav-item"><i class="fas fa-message"></i><span>cluck</span></a>
+    <a href="contact.html" class="nav-item"><i class="fas fa-message"></i><span>kulit</span></a>
   </div>
 
+  <!-- header with working links -->
   <div class="header">
-    <div class="logo-tag"><span class="logo-icon">🥚</span><div><div class="logo">HEN & HARVEST</div><div class="tagline">est. whenever • we forgot</div></div></div>
-    <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    <a href="index.html" class="logo-tag" style="text-decoration: none;">
+      <span class="logo-icon">🥚</span>
+      <div><div class="logo">BART'S EGG</div><div class="tagline">eggs with attitude • since 2024</div></div>
+    </a>
+    <div class="header-links">
+      <a href="index.html" class="header-link">home</a>
+      <a href="about.html" class="header-link active">kwento</a>
+      <a href="contact.html" class="header-link">kulit</a>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+      <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    </div>
+  </div>
+
+  <!-- about hero with placeholder -->
+  <div class="about-hero">
+    <div class="about-image-placeholder" loading="lazy">
+      <i class="fas fa-image"></i>
+      <p>[BART'S ORIGIN STORY IMAGE: 22yo kid surrounded by chickens]</p>
+      <small>si Bart 'yan. medyo lutang pero masipag.</small>
+    </div>
   </div>
 
   <div class="about-container">
-    <div class="about-hero">
-      <div class="about-badge">⚠️ REAL HUMANS. REAL CHICKENS. REAL WEIRD. ⚠️</div>
-      <h1>we started with 6 chickens<br>and a <span class="gradient-text">terrible business plan</span></h1>
-    </div>
+    <div class="about-badge">⚠️ REAL STORY. REAL CHICKENS. REAL STRUGGLE. ⚠️</div>
+    <h1 class="about-title">so ayun... <span class="gradient-text">nagsimula sa 5 manok</span> at isang napakalaking 'what if'</h1>
 
     <div class="story-grid">
       <div class="story-card">
-        <div class="story-icon">👵</div>
-        <h3>mom (the brains)</h3>
-        <p>"I bought some chickens for fun. then we had too many eggs. then the neighbors wanted some. then the neighbors' neighbors. now we're here. send help."</p>
-      </div>
-
-      <div class="story-card">
-        <div class="story-icon">👴</div>
-        <h3>pop (the 'muscle')</h3>
-        <p>"I just carry the heavy boxes and make dad jokes. Mom does everything else. I'm basically decorative. and I'm okay with that."</p>
+        <div class="story-icon">🧑‍🌾</div>
+        <h3>si Bart (22, no sleep, all eggs)</h3>
+        <p>"One time, nag-ggrocery ako. Isang itlog, ₱15?! Sabi ko, 'anak ng kamote, ang mahal!' So I bought 5 chickens instead. Best impulsive decision ever. Now I have 500 chickens and zero social life. Worth it."</p>
+        <div class="pinoy-humor">— bente anyos pa lang, dami na itlog</div>
       </div>
 
       <div class="story-card">
         <div class="story-icon">🐔</div>
-        <h3>the chickens (the real bosses)</h3>
-        <p>"They wake up at 5am, demand organic treats, and lay eggs like it's an Olympic sport. We work for them now."</p>
+        <h3>the chickens (the real CEOs)</h3>
+        <p>Meet Hen-rietta, Egg-malyn, and Cluck Noriega. They wake up at 4am, demand organic feed, and lay eggs like it's an Olympic sport. We work for them now. Hindi na kami ang amo. Sila na.</p>
+        <div class="pinoy-humor">— may pa-sweldo pang hindi nababayaran</div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-icon">💸</div>
+        <h3>the 'diskarte' moment</h3>
+        <p>Bart realized: buy direct from farm, sell to neighbors, then neighbors' neighbors, then the whole barangay. No middleman. No inflated prices. Just eggs, trust, and a lot of "pabili po itlog" texts at 5am.</p>
+        <div class="pinoy-humor">— diskarte over diploma, mga boss</div>
       </div>
     </div>
 
     <div class="manifesto">
-      <div class="manifesto-quote">"we don't do factory farms. we don't do sad eggs. we do sunrise collections, happy chickens, and prices that'll make you do a double take."</div>
-      <div class="manifesto-sign">— Mom & Pop, probably</div>
+      <div class="manifesto-quote">"hindi kami galing sa mayamang pamilya. galing kami sa 'kaya natin 'to' na may kasamang takot. pero eto, nagbebenta na kami ng itlog sa buong Pilipinas. minsan, kelangan mo lang maniwala sa sarili mo... at sa manok."</div>
+      <div class="manifesto-sign">— Bart, habang nag-iisip kung anong ulam</div>
     </div>
 
     <div class="fun-section">
-      <div class="fun-fact">
-        <i class="fas fa-drumstick-bite"></i>
-        <span>our most famous chicken is named 'Princess Lay-a' and she has 2.3k Instagram followers</span>
-      </div>
-      <div class="fun-fact">
-        <i class="fas fa-trophy"></i>
-        <span>we once sold 400 dozen in 6 hours. our backs still hurt.</span>
-      </div>
-      <div class="fun-fact">
-        <i class="fas fa-skull"></i>
-        <span>we've never lost an argument about egg quality. never will.</span>
-      </div>
+      <div class="fun-fact"><i class="fas fa-drumstick-bite"></i><span>our most famous chicken is named 'Princess Lay-a' and she has 2.3k TikTok followers (more than Bart)</span></div>
+      <div class="fun-fact"><i class="fas fa-trophy"></i><span>we once sold 500 dozen in 4 hours. Bart passed out from happiness. then from pagod.</span></div>
+      <div class="fun-fact"><i class="fas fa-skull"></i><span>we've never lost a 'masarap ba itlog niyo?' taste test. never will. #humblebrag</span></div>
     </div>
   </div>
 
+  <!-- footer with working social links -->
   <div class="footer">
     <div class="footer-joke" id="dadJoke">loading dad joke...</div>
-    <div class="footer-links"><span>no returns (you'll eat them too fast)</span><span>•</span><span>chickens are treated like royalty</span><span>•</span><span>free shipping on 2+ dozen</span></div>
-    <div class="copyright">Hen & Harvest — we put the 'egg' in 'egg-cellent' since forever</div>
+    <div class="footer-links">
+      <a href="#" class="footer-link">no returns (you'll eat them too fast)</a>
+      <span>•</span>
+      <a href="#" class="footer-link">🐔 happy chickens = happy eggs</a>
+      <span>•</span>
+      <a href="#" class="footer-link">free delivery on 2+ dozen</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:hello@bartsegg.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="copyright"><a href="index.html" style="color: inherit; text-decoration: none;">Bart's Egg</a> — "basta itlog, kay Bart ka na" • since nagka-idea si Bart habang nakain ng itlog</div>
   </div>
 
-  <div class="cart-drawer" id="cartDrawer">
-    <div class="cart-overlay" id="cartOverlay"></div>
-    <div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">$0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div>
-  </div>
+  <!-- cart drawer -->
+  <div class="cart-drawer" id="cartDrawer"><div class="cart-overlay" id="cartOverlay"></div><div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">₱0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div></div>
 
   <script src="script.js"></script>
 </body>

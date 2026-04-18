@@ -3,67 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Hen & Harvest | cluck us up</title>
+  <title>Bart's Egg | makulit ka? message mo kami</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-theme="light">
   <div class="bottom-nav">
     <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>eggs</span></a>
-    <a href="about.html" class="nav-item"><i class="fas fa-face-grin-tongue-squint"></i><span>story</span></a>
+    <a href="about.html" class="nav-item"><i class="fas fa-face-grin-tongue-squint"></i><span>kwento</span></a>
     <button class="nav-item cart-trigger" id="mobileCartTrigger"><i class="fas fa-basket-shopping"></i><span>cart</span><span class="cart-badge" id="mobileCartBadge">0</span></button>
-    <a href="contact.html" class="nav-item active"><i class="fas fa-message"></i><span>cluck</span></a>
+    <a href="contact.html" class="nav-item active"><i class="fas fa-message"></i><span>kulit</span></a>
   </div>
 
   <div class="header">
-    <div class="logo-tag"><span class="logo-icon">🥚</span><div><div class="logo">HEN & HARVEST</div><div class="tagline">est. whenever • we forgot</div></div></div>
-    <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    <a href="index.html" class="logo-tag" style="text-decoration: none;">
+      <span class="logo-icon">🥚</span>
+      <div><div class="logo">BART'S EGG</div><div class="tagline">eggs with attitude • since 2024</div></div>
+    </a>
+    <div style="display: flex; gap: 12px;">
+      <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+      <button class="cart-trigger desktop-cart-btn" id="desktopCartTrigger"><i class="fas fa-basket-shopping"></i><span class="cart-badge" id="desktopCartBadge">0</span></button>
+    </div>
   </div>
 
   <div class="contact-container">
     <div class="contact-header">
-      <div class="contact-badge">📞 WE ACTUALLY REPLY (unlike your ex) 📞</div>
-      <h1>want to <span class="gradient-text">cluck</span> at us?</h1>
-      <p>complaints? praise? chicken fan mail? we want it all.</p>
+      <div class="contact-badge">📞 SUMASAGOT KAMI (di tulad ng ex mo) 📞</div>
+      <h1>wanna <span class="gradient-text">kulit</span> us?</h1>
+      <p>reklamo? papuri? fan mail sa manok? g lang ng g.</p>
     </div>
 
     <div class="contact-grid">
       <div class="contact-cards">
-        <div class="contact-card"><i class="fas fa-phone-volume"></i><div><h4>the hotline</h4><p><a href="tel:+15555551234">(555) EGG-4-YOU</a></p><small>mom picks up. she's chatty. you've been warned.</small></div></div>
-        <div class="contact-card"><i class="fas fa-envelope-open-text"></i><div><h4>egg-mail</h4><p><a href="mailto:hello@henandharvest.com">hello@henandharvest.com</a></p><small>we reply within 24 pecks</small></div></div>
-        <div class="contact-card"><i class="fab fa-instagram"></i><div><h4>the 'gram</h4><p>@henandharvest</p><small>chicken content > everything else</small></div></div>
-        <div class="contact-card"><i class="fas fa-map-pin"></i><div><h4>the coop</h4><p>123 Egg-cellent Lane, Farmland, USA</p><small>GPS might say 'middle of nowhere' — correct</small></div></div>
+        <div class="contact-card"><i class="fas fa-phone-volume"></i><div><h4>tawag na 'yan pare</h4><p><a href="tel:+639123456789">+63 912 345 6789</a></p><small>si Bart sumasagot. mahaba kausap. good luck.</small></div></div>
+        <div class="contact-card"><i class="fas fa-envelope-open-text"></i><div><h4>egg-mail (corny pero effective)</h4><p><a href="mailto:hello@bartsegg.com">hello@bartsegg.com</a></p><small>reply within 24 hours. or 24 pecks. whichever comes first.</small></div></div>
+        <div class="contact-card"><i class="fab fa-instagram"></i><div><h4>the 'gram</h4><p>@bartsegg</p><small>chicken content > everything else. follow na.</small></div></div>
+        <div class="contact-card"><i class="fas fa-map-pin"></i><div><h4>the coop (actual location)</h4><p>123 Egg Avenue, Barangay Itlog, Sta. Rosa, Laguna</p><small>madaming manok. madaming itlog. konting alikabok.</small></div></div>
       </div>
 
       <div class="contact-form-wrapper">
         <h3>send us a message <span style="font-size:1.2rem;">🐔</span></h3>
+        <div class="form-placeholder" loading="lazy">
+          <i class="fas fa-image"></i>
+          <p>[CONTACT FORM ILLUSTRATION: Bart holding a phone looking confused]</p>
+        </div>
         <form id="contactForm">
-          <input type="text" placeholder="your name (or your chicken's name)" required>
-          <input type="email" placeholder="email so we can reply" required>
+          <input type="text" placeholder="name mo (or name ng manok mo, okay lang)" required>
+          <input type="email" placeholder="email para makareply kami" required>
           <select required>
-            <option value="">what's this about?</option>
-            <option>i want to order ALL the eggs</option>
-            <option>i have an egg-related emergency</option>
-            <option>can i pet a chicken?</option>
-            <option>your eggs changed my life</option>
-            <option>other (keep it weird)</option>
+            <option value="">ano daw? (pili ka)</option>
+            <option>gusto ko umorder ng maraming itlog</option>
+            <option>may tanong ako about freshness</option>
+            <option>pwede bang pumunta sa farm?</option>
+            <option>masarap itlog niyo pre! solid!</option>
+            <option>iba (comment ka na lang)</option>
           </select>
-          <textarea rows="4" placeholder="lay it on us..."></textarea>
-          <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> send & we'll cluck back</button>
+          <textarea rows="4" placeholder="andito na ang mahabang message mo..."></textarea>
+          <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> send • magre-reply kami, promise</button>
         </form>
-        <div id="contactSuccess" style="display:none;" class="success-toast">🐣 message sent! expect a reply within 24 pecks 🐣</div>
+        <div id="contactSuccess" style="display:none;" class="success-toast">🐣 ayun! received na. reply kami within 24 hours. salamat sa suporta! 🐣</div>
       </div>
+    </div>
+
+    <div class="map-placeholder" loading="lazy">
+      <i class="fas fa-map"></i>
+      <p>[MAP IMAGE: we're here! hanapin niyo lang amoy ng manok]</p>
+      <small>📍 Sta. Rosa, Laguna • tawag lang pag naliligaw</small>
     </div>
   </div>
 
   <div class="footer">
     <div class="footer-joke" id="dadJoke">loading dad joke...</div>
-    <div class="footer-links"><span>no returns (you'll eat them too fast)</span><span>•</span><span>chickens are treated like royalty</span><span>•</span><span>free shipping on 2+ dozen</span></div>
-    <div class="copyright">Hen & Harvest — we put the 'egg' in 'egg-cellent' since forever</div>
+    <div class="footer-links"><span>no returns (you'll eat them too fast)</span><span>•</span><span>🐔 happy chickens = happy eggs</span><span>•</span><span>free delivery on 2+ dozen</span></div>
+    <div class="social-icons"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-tiktok"></i><i class="fab fa-twitter"></i></div>
+    <div class="copyright">Bart's Egg — "basta itlog, kay Bart ka na" • since nagka-idea si Bart habang nakain ng itlog</div>
   </div>
 
-  <div class="cart-drawer" id="cartDrawer"><div class="cart-overlay" id="cartOverlay"></div><div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">$0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div></div>
+  <div class="cart-drawer" id="cartDrawer"><div class="cart-overlay" id="cartOverlay"></div><div class="cart-content"><div class="cart-header"><h3><i class="fas fa-basket-shopping"></i> your egg basket</h3><button class="cart-close" id="closeCartBtn">&times;</button></div><div class="cart-items-list" id="cartItemsList"><div class="empty-cart">🐔 basket empty.</div></div><div class="cart-footer"><div class="cart-total" id="cartTotal">₱0.00</div><a href="checkout.html" class="checkout-button">checkout →</a></div></div></div>
 
   <script src="script.js"></script>
 </body>
